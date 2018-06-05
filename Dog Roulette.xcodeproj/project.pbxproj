@@ -14,6 +14,9 @@
 		E57C68E320C60BA40036D134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57C68E120C60BA40036D134 /* LaunchScreen.storyboard */; };
 		E57C68EE20C60BA40036D134 /* Dog_RouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68ED20C60BA40036D134 /* Dog_RouletteTests.swift */; };
 		E57C68F920C60BA40036D134 /* Dog_RouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68F820C60BA40036D134 /* Dog_RouletteUITests.swift */; };
+		E57C690720C614350036D134 /* YoutubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C690620C614350036D134 /* YoutubeAPI.swift */; };
+		E57C690920C61CC60036D134 /* YoutubeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C690820C61CC60036D134 /* YoutubeStore.swift */; };
+		E57C690B20C63EEF0036D134 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C690A20C63EEF0036D134 /* YoutubeVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E57C68F420C60BA40036D134 /* Dog RouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dog RouletteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57C68F820C60BA40036D134 /* Dog_RouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_RouletteUITests.swift; sourceTree = "<group>"; };
 		E57C68FA20C60BA40036D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57C690620C614350036D134 /* YoutubeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeAPI.swift; sourceTree = "<group>"; };
+		E57C690820C61CC60036D134 /* YoutubeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStore.swift; sourceTree = "<group>"; };
+		E57C690A20C63EEF0036D134 /* YoutubeVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				E57C68DF20C60BA40036D134 /* Assets.xcassets */,
 				E57C68E120C60BA40036D134 /* LaunchScreen.storyboard */,
 				E57C68E420C60BA40036D134 /* Info.plist */,
+				E57C690620C614350036D134 /* YoutubeAPI.swift */,
+				E57C690820C61CC60036D134 /* YoutubeStore.swift */,
+				E57C690A20C63EEF0036D134 /* YoutubeVideo.swift */,
 			);
 			path = "Dog Roulette";
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57C690720C614350036D134 /* YoutubeAPI.swift in Sources */,
 				E57C68DB20C60BA40036D134 /* ViewController.swift in Sources */,
 				E57C68D920C60BA40036D134 /* AppDelegate.swift in Sources */,
+				E57C690B20C63EEF0036D134 /* YoutubeVideo.swift in Sources */,
+				E57C690920C61CC60036D134 /* YoutubeStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
