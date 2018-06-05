@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E57C68D920C60BA40036D134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68D820C60BA40036D134 /* AppDelegate.swift */; };
+		E57C68DB20C60BA40036D134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68DA20C60BA40036D134 /* ViewController.swift */; };
+		E57C68DE20C60BA40036D134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57C68DC20C60BA40036D134 /* Main.storyboard */; };
+		E57C68E020C60BA40036D134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57C68DF20C60BA40036D134 /* Assets.xcassets */; };
+		E57C68E320C60BA40036D134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57C68E120C60BA40036D134 /* LaunchScreen.storyboard */; };
+		E57C68EE20C60BA40036D134 /* Dog_RouletteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68ED20C60BA40036D134 /* Dog_RouletteTests.swift */; };
+		E57C68F920C60BA40036D134 /* Dog_RouletteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68F820C60BA40036D134 /* Dog_RouletteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E57C68EA20C60BA40036D134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57C68CD20C60BA40036D134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57C68D420C60BA40036D134;
+			remoteInfo = "Dog Roulette";
+		};
+		E57C68F520C60BA40036D134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E57C68CD20C60BA40036D134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E57C68D420C60BA40036D134;
+			remoteInfo = "Dog Roulette";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E57C68D520C60BA40036D134 /* Dog Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57C68D820C60BA40036D134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E57C68DA20C60BA40036D134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E57C68DD20C60BA40036D134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E57C68DF20C60BA40036D134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E57C68E220C60BA40036D134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E57C68E420C60BA40036D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57C68E920C60BA40036D134 /* Dog RouletteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dog RouletteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57C68ED20C60BA40036D134 /* Dog_RouletteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_RouletteTests.swift; sourceTree = "<group>"; };
+		E57C68EF20C60BA40036D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57C68F420C60BA40036D134 /* Dog RouletteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dog RouletteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57C68F820C60BA40036D134 /* Dog_RouletteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_RouletteUITests.swift; sourceTree = "<group>"; };
+		E57C68FA20C60BA40036D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E57C68D220C60BA40036D134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C68E620C60BA40036D134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C68F120C60BA40036D134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E57C68CC20C60BA40036D134 = {
+			isa = PBXGroup;
+			children = (
+				E57C68D720C60BA40036D134 /* Dog Roulette */,
+				E57C68EC20C60BA40036D134 /* Dog RouletteTests */,
+				E57C68F720C60BA40036D134 /* Dog RouletteUITests */,
+				E57C68D620C60BA40036D134 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E57C68D620C60BA40036D134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E57C68D520C60BA40036D134 /* Dog Roulette.app */,
+				E57C68E920C60BA40036D134 /* Dog RouletteTests.xctest */,
+				E57C68F420C60BA40036D134 /* Dog RouletteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E57C68D720C60BA40036D134 /* Dog Roulette */ = {
+			isa = PBXGroup;
+			children = (
+				E57C68D820C60BA40036D134 /* AppDelegate.swift */,
+				E57C68DA20C60BA40036D134 /* ViewController.swift */,
+				E57C68DC20C60BA40036D134 /* Main.storyboard */,
+				E57C68DF20C60BA40036D134 /* Assets.xcassets */,
+				E57C68E120C60BA40036D134 /* LaunchScreen.storyboard */,
+				E57C68E420C60BA40036D134 /* Info.plist */,
+			);
+			path = "Dog Roulette";
+			sourceTree = "<group>";
+		};
+		E57C68EC20C60BA40036D134 /* Dog RouletteTests */ = {
+			isa = PBXGroup;
+			children = (
+				E57C68ED20C60BA40036D134 /* Dog_RouletteTests.swift */,
+				E57C68EF20C60BA40036D134 /* Info.plist */,
+			);
+			path = "Dog RouletteTests";
+			sourceTree = "<group>";
+		};
+		E57C68F720C60BA40036D134 /* Dog RouletteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E57C68F820C60BA40036D134 /* Dog_RouletteUITests.swift */,
+				E57C68FA20C60BA40036D134 /* Info.plist */,
+			);
+			path = "Dog RouletteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E57C68D420C60BA40036D134 /* Dog Roulette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57C68FD20C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog Roulette" */;
+			buildPhases = (
+				E57C68D120C60BA40036D134 /* Sources */,
+				E57C68D220C60BA40036D134 /* Frameworks */,
+				E57C68D320C60BA40036D134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dog Roulette";
+			productName = "Dog Roulette";
+			productReference = E57C68D520C60BA40036D134 /* Dog Roulette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E57C68E820C60BA40036D134 /* Dog RouletteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57C690020C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog RouletteTests" */;
+			buildPhases = (
+				E57C68E520C60BA40036D134 /* Sources */,
+				E57C68E620C60BA40036D134 /* Frameworks */,
+				E57C68E720C60BA40036D134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57C68EB20C60BA40036D134 /* PBXTargetDependency */,
+			);
+			name = "Dog RouletteTests";
+			productName = "Dog RouletteTests";
+			productReference = E57C68E920C60BA40036D134 /* Dog RouletteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E57C68F320C60BA40036D134 /* Dog RouletteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57C690320C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog RouletteUITests" */;
+			buildPhases = (
+				E57C68F020C60BA40036D134 /* Sources */,
+				E57C68F120C60BA40036D134 /* Frameworks */,
+				E57C68F220C60BA40036D134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E57C68F620C60BA40036D134 /* PBXTargetDependency */,
+			);
+			name = "Dog RouletteUITests";
+			productName = "Dog RouletteUITests";
+			productReference = E57C68F420C60BA40036D134 /* Dog RouletteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E57C68CD20C60BA40036D134 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "\U0010Cortland Walker";
+				TargetAttributes = {
+					E57C68D420C60BA40036D134 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = YUED9C4RF4;
+						ProvisioningStyle = Automatic;
+					};
+					E57C68E820C60BA40036D134 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = YUED9C4RF4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E57C68D420C60BA40036D134;
+					};
+					E57C68F320C60BA40036D134 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = YUED9C4RF4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E57C68D420C60BA40036D134;
+					};
+				};
+			};
+			buildConfigurationList = E57C68D020C60BA40036D134 /* Build configuration list for PBXProject "Dog Roulette" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E57C68CC20C60BA40036D134;
+			productRefGroup = E57C68D620C60BA40036D134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E57C68D420C60BA40036D134 /* Dog Roulette */,
+				E57C68E820C60BA40036D134 /* Dog RouletteTests */,
+				E57C68F320C60BA40036D134 /* Dog RouletteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E57C68D320C60BA40036D134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57C68E320C60BA40036D134 /* LaunchScreen.storyboard in Resources */,
+				E57C68E020C60BA40036D134 /* Assets.xcassets in Resources */,
+				E57C68DE20C60BA40036D134 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C68E720C60BA40036D134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C68F220C60BA40036D134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E57C68D120C60BA40036D134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57C68DB20C60BA40036D134 /* ViewController.swift in Sources */,
+				E57C68D920C60BA40036D134 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C68E520C60BA40036D134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57C68EE20C60BA40036D134 /* Dog_RouletteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57C68F020C60BA40036D134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57C68F920C60BA40036D134 /* Dog_RouletteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E57C68EB20C60BA40036D134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57C68D420C60BA40036D134 /* Dog Roulette */;
+			targetProxy = E57C68EA20C60BA40036D134 /* PBXContainerItemProxy */;
+		};
+		E57C68F620C60BA40036D134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E57C68D420C60BA40036D134 /* Dog Roulette */;
+			targetProxy = E57C68F520C60BA40036D134 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E57C68DC20C60BA40036D134 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57C68DD20C60BA40036D134 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E57C68E120C60BA40036D134 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57C68E220C60BA40036D134 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E57C68FB20C60BA40036D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E57C68FC20C60BA40036D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E57C68FE20C60BA40036D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YUED9C4RF4;
+				INFOPLIST_FILE = "Dog Roulette/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cortland.Dog-Roulette";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E57C68FF20C60BA40036D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YUED9C4RF4;
+				INFOPLIST_FILE = "Dog Roulette/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cortland.Dog-Roulette";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E57C690120C60BA40036D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YUED9C4RF4;
+				INFOPLIST_FILE = "Dog RouletteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cortland.Dog-RouletteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dog Roulette.app/Dog Roulette";
+			};
+			name = Debug;
+		};
+		E57C690220C60BA40036D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YUED9C4RF4;
+				INFOPLIST_FILE = "Dog RouletteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cortland.Dog-RouletteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dog Roulette.app/Dog Roulette";
+			};
+			name = Release;
+		};
+		E57C690420C60BA40036D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YUED9C4RF4;
+				INFOPLIST_FILE = "Dog RouletteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cortland.Dog-RouletteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Dog Roulette";
+			};
+			name = Debug;
+		};
+		E57C690520C60BA40036D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YUED9C4RF4;
+				INFOPLIST_FILE = "Dog RouletteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cortland.Dog-RouletteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Dog Roulette";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E57C68D020C60BA40036D134 /* Build configuration list for PBXProject "Dog Roulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57C68FB20C60BA40036D134 /* Debug */,
+				E57C68FC20C60BA40036D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57C68FD20C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog Roulette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57C68FE20C60BA40036D134 /* Debug */,
+				E57C68FF20C60BA40036D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E57C690020C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog RouletteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57C690120C60BA40036D134 /* Debug */,
+				E57C690220C60BA40036D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E57C690320C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog RouletteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57C690420C60BA40036D134 /* Debug */,
+				E57C690520C60BA40036D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E57C68CD20C60BA40036D134 /* Project object */;
+}
