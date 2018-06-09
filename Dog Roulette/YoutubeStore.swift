@@ -15,6 +15,12 @@ enum YoutubeResult {
 
 class YoutubeStore {
     
+    typealias JSONDictionary = [[String: Any]]
+    
+    var return_list: [String] = []
+    
+    var errorMessage = ""
+    
     private let session: URLSession = {
         let config = URLSessionConfiguration.default
         return URLSession(configuration: config)
@@ -22,31 +28,48 @@ class YoutubeStore {
     
     
     func fetchVideos(vidSearch: String = "") {
+        
         let url = YoutubeAPI.init().youtubeURL(query_params: vidSearch)
         let request = URLRequest(url: url)
+        // Req
         let task = session.dataTask(with: request) {
-            (data, response, error) -> Void in
-            if let jsonData = data {
-                do {
-                    let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
-                    print(jsonObject)
-                } catch let error {
-                    print("Error Creating json Object: \(error) ")
+            (data, response, error) in
+                if let error = error {
+                    self.errorMessage += "DataTask error: " + error.localizedDescription + "\n"
+                } else if let data = data,
+                    let response = response as? HTTPURLResponse,
+                    response.statusCode == 200 {
+                    let did = self.getVideos(data)
+                    print(did.description)
                 }
-            } else if let requestError = error {
-                print("Error fetching videos: \(requestError)")
-            } else {
-                print("Unexpected error with the request")
-            }
+            
         }
+        
         task.resume()
+    
     }
     
+
+    fileprivate func getVideos(_ data: Data) -> [String] {
+        var response: [String: Any]!
+        
+        do {
+            response = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+        } catch let parseError as NSError {
+            print(parseError.description)
+        }
+        
+        if let items = response["items"] as? [[String: Any]] {
+            for vids in items {
+                if let id = vids["id"] as? [String: Any] {
+                    //videos.append(id["videoId"])
+                    return_list.append(id["videoId"]! as! String)
+                }
+            }
+        }
+        
+        return return_list
     
-    func fetchId() {
-        //var fetchVideosResult = fetchVideos
-        
-        
     }
     
 }

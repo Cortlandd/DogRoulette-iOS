@@ -10,9 +10,9 @@ import Foundation
 
 class YoutubeVideo {
     
-    let videoId: String
+    let videoId: [String]
     
     init(videoId: String) {
-        self.videoId = videoId
+        self.videoId = [videoId]
     }
 }

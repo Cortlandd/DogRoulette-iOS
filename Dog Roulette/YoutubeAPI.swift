@@ -44,7 +44,7 @@ struct YoutubeAPI {
             "safeSearch":"none",
             "key": apiKey,
             "type": "video",
-            "maxResults": "50"
+            "maxResults": 50.description
         ]
         
         for (key, value) in baseParams {
