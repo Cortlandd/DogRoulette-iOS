@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A10124C951A59738D4ECCB /* Pods_Dog_RouletteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0FB624926B445BE04045C8C /* Pods_Dog_RouletteUITests.framework */; };
+		A8E16C4D68B0346357B043F2 /* Pods_Dog_Roulette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA166C0E606650325593EBC /* Pods_Dog_Roulette.framework */; };
+		DCF4EE398F9E6E152C4240BD /* Pods_Dog_RouletteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3F9A091B30E73D05BA199 /* Pods_Dog_RouletteTests.framework */; };
 		E57C68D920C60BA40036D134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68D820C60BA40036D134 /* AppDelegate.swift */; };
 		E57C68DB20C60BA40036D134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C68DA20C60BA40036D134 /* ViewController.swift */; };
 		E57C68DE20C60BA40036D134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57C68DC20C60BA40036D134 /* Main.storyboard */; };
@@ -37,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		463A2CB184F4413A5E8FD2C5 /* Pods-Dog RouletteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog RouletteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dog RouletteTests/Pods-Dog RouletteTests.release.xcconfig"; sourceTree = "<group>"; };
+		60927B4BADA0255E2D02DC4E /* Pods-Dog RouletteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog RouletteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dog RouletteUITests/Pods-Dog RouletteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		66F1411DFE59139664EABA32 /* Pods-Dog Roulette.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog Roulette.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dog Roulette/Pods-Dog Roulette.debug.xcconfig"; sourceTree = "<group>"; };
+		6FC300A426F8CE33E3DCDB67 /* Pods-Dog RouletteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog RouletteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dog RouletteTests/Pods-Dog RouletteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99F3F9A091B30E73D05BA199 /* Pods_Dog_RouletteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dog_RouletteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA166C0E606650325593EBC /* Pods_Dog_Roulette.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dog_Roulette.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FB624926B445BE04045C8C /* Pods_Dog_RouletteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dog_RouletteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FC26CF36CA96AA62456A49 /* Pods-Dog RouletteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog RouletteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dog RouletteUITests/Pods-Dog RouletteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E57C68D520C60BA40036D134 /* Dog Roulette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog Roulette.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E57C68D820C60BA40036D134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E57C68DA20C60BA40036D134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 		E57C690620C614350036D134 /* YoutubeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeAPI.swift; sourceTree = "<group>"; };
 		E57C690820C61CC60036D134 /* YoutubeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeStore.swift; sourceTree = "<group>"; };
 		E57C690A20C63EEF0036D134 /* YoutubeVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
+		EC124EFED0C7791DBC2616A9 /* Pods-Dog Roulette.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dog Roulette.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dog Roulette/Pods-Dog Roulette.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E16C4D68B0346357B043F2 /* Pods_Dog_Roulette.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF4EE398F9E6E152C4240BD /* Pods_Dog_RouletteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A10124C951A59738D4ECCB /* Pods_Dog_RouletteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624864E47A2F99568B111CC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66F1411DFE59139664EABA32 /* Pods-Dog Roulette.debug.xcconfig */,
+				EC124EFED0C7791DBC2616A9 /* Pods-Dog Roulette.release.xcconfig */,
+				6FC300A426F8CE33E3DCDB67 /* Pods-Dog RouletteTests.debug.xcconfig */,
+				463A2CB184F4413A5E8FD2C5 /* Pods-Dog RouletteTests.release.xcconfig */,
+				60927B4BADA0255E2D02DC4E /* Pods-Dog RouletteUITests.debug.xcconfig */,
+				E1FC26CF36CA96AA62456A49 /* Pods-Dog RouletteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C1C94914F26144D5B88F0B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA166C0E606650325593EBC /* Pods_Dog_Roulette.framework */,
+				99F3F9A091B30E73D05BA199 /* Pods_Dog_RouletteTests.framework */,
+				E0FB624926B445BE04045C8C /* Pods_Dog_RouletteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E57C68CC20C60BA40036D134 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +125,8 @@
 				E57C68EC20C60BA40036D134 /* Dog RouletteTests */,
 				E57C68F720C60BA40036D134 /* Dog RouletteUITests */,
 				E57C68D620C60BA40036D134 /* Products */,
+				624864E47A2F99568B111CC3 /* Pods */,
+				9C1C94914F26144D5B88F0B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E57C68FD20C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog Roulette" */;
 			buildPhases = (
+				59C3222840645C0282C7975B /* [CP] Check Pods Manifest.lock */,
 				E57C68D120C60BA40036D134 /* Sources */,
 				E57C68D220C60BA40036D134 /* Frameworks */,
 				E57C68D320C60BA40036D134 /* Resources */,
@@ -158,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E57C690020C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog RouletteTests" */;
 			buildPhases = (
+				D60A81016E364967B3300ECC /* [CP] Check Pods Manifest.lock */,
 				E57C68E520C60BA40036D134 /* Sources */,
 				E57C68E620C60BA40036D134 /* Frameworks */,
 				E57C68E720C60BA40036D134 /* Resources */,
@@ -176,6 +218,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E57C690320C60BA40036D134 /* Build configuration list for PBXNativeTarget "Dog RouletteUITests" */;
 			buildPhases = (
+				71964D64CF459FB73599485D /* [CP] Check Pods Manifest.lock */,
 				E57C68F020C60BA40036D134 /* Sources */,
 				E57C68F120C60BA40036D134 /* Frameworks */,
 				E57C68F220C60BA40036D134 /* Resources */,
@@ -265,6 +308,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59C3222840645C0282C7975B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dog Roulette-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71964D64CF459FB73599485D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dog RouletteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60A81016E364967B3300ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dog RouletteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E57C68D120C60BA40036D134 /* Sources */ = {
@@ -427,6 +527,7 @@
 		};
 		E57C68FE20C60BA40036D134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F1411DFE59139664EABA32 /* Pods-Dog Roulette.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YUED9C4RF4;
@@ -441,6 +542,7 @@
 		};
 		E57C68FF20C60BA40036D134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC124EFED0C7791DBC2616A9 /* Pods-Dog Roulette.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YUED9C4RF4;
@@ -455,6 +557,7 @@
 		};
 		E57C690120C60BA40036D134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC300A426F8CE33E3DCDB67 /* Pods-Dog RouletteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -470,6 +573,7 @@
 		};
 		E57C690220C60BA40036D134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 463A2CB184F4413A5E8FD2C5 /* Pods-Dog RouletteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +589,7 @@
 		};
 		E57C690420C60BA40036D134 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60927B4BADA0255E2D02DC4E /* Pods-Dog RouletteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YUED9C4RF4;
@@ -499,6 +604,7 @@
 		};
 		E57C690520C60BA40036D134 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1FC26CF36CA96AA62456A49 /* Pods-Dog RouletteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = YUED9C4RF4;

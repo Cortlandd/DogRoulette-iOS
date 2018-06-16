@@ -7,11 +7,7 @@
 //
 
 import Foundation
-
-enum YoutubeResult {
-    case success([YoutubeVideo])
-    case failure(Error)
-}
+import UIKit
 
 class YoutubeStore {
     
@@ -19,17 +15,13 @@ class YoutubeStore {
     
     var return_list: [String] = []
     
-    var errorMessage = ""
     
-    private let session: URLSession = {
-        let config = URLSessionConfiguration.default
-        return URLSession(configuration: config)
-    }()
+    @IBOutlet var myUIView: UITableView?
     
-    
-    func fetchVideos(vidSearch: String = "") {
+    /*
+    func fetchVideos(vidSearch: String? = "") {
         
-        let url = YoutubeAPI.init().youtubeURL(query_params: vidSearch)
+        let url = YoutubeAPI.init().youtubeURL(query_params: vidSearch!)
         let request = URLRequest(url: url)
         // Req
         let task = session.dataTask(with: request) {
@@ -39,37 +31,16 @@ class YoutubeStore {
                 } else if let data = data,
                     let response = response as? HTTPURLResponse,
                     response.statusCode == 200 {
-                    let did = self.getVideos(data)
-                    print(did.description)
-                }
-            
+                        self.return_list += self.getVideos(data)
+                        //print(did.description)
+                    }
         }
         
         task.resume()
     
     }
+ */
     
-
-    fileprivate func getVideos(_ data: Data) -> [String] {
-        var response: [String: Any]!
-        
-        do {
-            response = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-        } catch let parseError as NSError {
-            print(parseError.description)
-        }
-        
-        if let items = response["items"] as? [[String: Any]] {
-            for vids in items {
-                if let id = vids["id"] as? [String: Any] {
-                    //videos.append(id["videoId"])
-                    return_list.append(id["videoId"]! as! String)
-                }
-            }
-        }
-        
-        return return_list
     
-    }
     
 }
