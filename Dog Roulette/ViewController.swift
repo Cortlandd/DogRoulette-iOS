@@ -7,72 +7,64 @@
 //
 
 import UIKit
+import Alamofire
+import YoutubeKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
+    //var store: YoutubeStore!
     
-    var store: YoutubeStore!
+    @IBOutlet weak var playerview: UIView!
     
-    var r: [String] = []
+    var player: YTSwiftyPlayer!
     
-    var errorMessage = ""
-    
-    // For Testing
-    var items: [String] = ["We", "Heart", "Swift"]
+    var r = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fetchVideos()
+        // Create a new player
+        player = YTSwiftyPlayer(frame: CGRect(x: 0, y: 0, width: 300, height: 300), playerVars: [.autoplay(true), .videoID("V1EYgeTER_I")])
         
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        // Set player view.
+        playerview = player
         
+        // Set delegate for detect callback information from the player.
+        player.delegate = self as YTSwiftyPlayerDelegate
+        
+        // Load the video.
+        player.loadPlayer()
+        
+        /*
+        let my_url = YoutubeAPI.init().youtubeURL(query_params: "")
+        
+        Alamofire.request(my_url).responseJSON { response in
+            switch response.result {
+            case .success:
+                if let json = response.result.value as? [String: Any] {
+                    if let items = json["items"] as? [[String: Any]] {
+                        for vid in items {
+                            if let id = vid["id"] as? [String: Any] {
+                                //videos.append(id["videoId"])
+                                let my_result = id["videoId"]! as! String
+                                self.r.append(my_result)
+                            }
+                        }
+                    }
+                }
+                
+            case .failure:
+                print("Error")
+            }
+            
+            print(self.r)
+        }
+        */
         
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.r.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell")!
-        
-        cell.textLabel?.text = self.r[indexPath.row]
-        
-        return cell
-        
-    }
-    
-    private let session: URLSession = {
-        let config = URLSessionConfiguration.default
-        return URLSession(configuration: config)
-    }()
-    
-    func fetchVideos(vidSearch: String? = "") /* -> [String]  */{
-        
-        let url = YoutubeAPI.init().youtubeURL(query_params: vidSearch!)
-        let request = URLRequest(url: url)
-        
-        
-        let task = session.dataTask(with: request) {
-            (data, response, error) in
-            
-            if let error = error {
-                self.errorMessage += "DataTask error: " + error.localizedDescription + "\n"
-            } else if let data = data,
-                let response = response as? HTTPURLResponse,
-                response.statusCode == 200 {
-                let result = self.getVideos(data)
-                print(result.description)
-            }
-        }
-        
-        task.resume()
-    }
     
     func getVideos(_ data: Data) -> [String] {
         var response: [String: Any]!
@@ -97,14 +89,50 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return result
         
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
 
+extension ViewController: YTSwiftyPlayerDelegate {
+    
+    func playerReady(_ player: YTSwiftyPlayer) {
+        print(#function)
+    }
+    
+    func player(_ player: YTSwiftyPlayer, didUpdateCurrentTime currentTime: Double) {
+        print("\(#function):\(currentTime)")
+    }
+    
+    func player(_ player: YTSwiftyPlayer, didChangeState state: YTSwiftyPlayerState) {
+        print("\(#function):\(state)")
+    }
+    
+    func player(_ player: YTSwiftyPlayer, didChangePlaybackRate playbackRate: Double) {
+        print("\(#function):\(playbackRate)")
+    }
+    
+    func player(_ player: YTSwiftyPlayer, didReceiveError error: YTSwiftyPlayerError) {
+        print("\(#function):\(error)")
+    }
+    
+    func player(_ player: YTSwiftyPlayer, didChangeQuality quality: YTSwiftyVideoQuality) {
+        print("\(#function):\(quality)")
+    }
+    
+    func apiDidChange(_ player: YTSwiftyPlayer) {
+        print(#function)
+    }
+    
+    func youtubeIframeAPIReady(_ player: YTSwiftyPlayer) {
+        print(#function)
+    }
+    
+    func youtubeIframeAPIFailedToLoad(_ player: YTSwiftyPlayer) {
+        print(#function)
+    }
 }
 
 
