@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     //var store: YoutubeStore!
     
-    @IBOutlet weak var playerView: YTSwiftyPlayer!
+    var playerView: YTSwiftyPlayer!
     
     var r = [String]()
 
