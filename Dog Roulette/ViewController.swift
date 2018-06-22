@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     
     //var store: YoutubeStore!
     
-    @IBOutlet weak var playerview: UIView!
-    
-    var player: YTSwiftyPlayer!
+    @IBOutlet weak var playerView: YTSwiftyPlayer!
     
     var r = [String]()
 
@@ -24,16 +22,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Create a new player
-        player = YTSwiftyPlayer(frame: CGRect(x: 0, y: 0, width: 300, height: 300), playerVars: [.autoplay(true), .videoID("V1EYgeTER_I")])
+        playerView = YTSwiftyPlayer(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 300), playerVars: [.autoplay(true), .videoID("V1EYgeTER_I")])
         
-        // Set player view.
-        playerview = player
+        view.addSubview(playerView)
         
         // Set delegate for detect callback information from the player.
-        player.delegate = self as YTSwiftyPlayerDelegate
+        playerView.delegate = self as YTSwiftyPlayerDelegate
         
         // Load the video.
-        player.loadPlayer()
+        playerView.loadPlayer()
         
         /*
         let my_url = YoutubeAPI.init().youtubeURL(query_params: "")
